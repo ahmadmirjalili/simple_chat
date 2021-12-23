@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styleSheet/resetStyle.css" />
+    <link rel="stylesheet" href="/styleSheet/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Chat</title>
+  </head>
+
+  <body>
+    <div id="toast">
+      <div id="desc">A notification message..</div>
+    </div>
+    <div class="main-container">
+      <div class="modal-container" id="modal-container">
+        <div class="modal">
+          <div class="login-modal">
+            <p class="login-modal-text">نام کاربری</p>
+            <input
+              class="login-modal-input"
+              id="login-username-input"
+              placeholder="دوست داری اسم اینجا چی باشه"
+            />
+            <p class="login-modal-text">رمز عبور</p>
+            <input
+              id="login-password-input"
+              class="login-modal-input"
+              placeholder="یه رمزی بزن یادت نره"
+              type="password"
+            />
+            <p class="login-modal-text">نام کاربری</p>
+            <input
+              id="login-receiver-username-input"
+              class="login-modal-input"
+              placeholder="با کی میخوای حرف بزنی"
+            />
+            <p class="direct-login-text">ثبت نام</p>
+            <p id="errorText">خطایی از سمت سرور پیش آمده است</p>
+            <button id="login-buttom" class="login-modal-button">
+              بزن بریم
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="chat-container"></div>
+    </div>
+    <div class="chat-footer-container">
+      <div class="chat-footer">
+        <div class="chat-send-container" id="send-message-container">
+          <i class="material-icons md-48" id="send-icon">mic</i>
+        </div>
+        <div class="chat-input-box">
+          <textarea id="chat-textarea"></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="js/index.js"></script>
+</html>
